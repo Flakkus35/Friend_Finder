@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Friend Finder Survey</title>
+
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous">
+	</script>
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</head>
+<body>
+	<!-- Modal Structure -->
+	<div id="modal1" class="modal">
+		<div class="modal-content">
+		  <h4 id='bestFriend'></h4>
+		  <img id='bestFriendImage'>
+		</div>
+		<div class="modal-footer">
+		  <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+		</div>
+	</div>
+	<div class='container main_body'>
+		<h2>Survey Questions</h2>
+		<br>
+		<h3>About You</h3>
+		<div class="row">
+			<div class="input-field col s6">
+			  <input value="" id="first_name2" type="text" class="validate">
+			  <label class="active" for="first_name2">Name (Required)</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s6">
+			  <input value="" id="photo" type="text" class="validate">
+			  <label class="active" for="photo">Link to Photo Image (Required)</label>
+			</div>
+		</div>
+		<h4>Question 1</h4>
+		<p>Your mind is always buzzing with unexplored ideas and plans.</p>
+		<div class="input-field col s12">
+			<select id='question_1'>
+			  <option value="" disabled selected>Select an option</option>
+			  <option value="1">1(Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5(Strongly Agree)</option>
+			</select>
+		</div>
+		<h4>Question 2</h4>
+		<p>Generally speaking, you rely more on your experience than your imagination.</p>
+		<div class="input-field col s12">
+			<select id='question_2'>
+			  <option value="" disabled selected>Select an option</option>
+			  <option value="1">1(Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5(Strongly Agree)</option>
+			</select>
+		</div>
+		<h4>Question 3</h4>
+		<p>You find it easy to stay relaxed and focused even when there is some pressure.</p>
+		<div class="input-field col s12">
+			<select id='question_3'>
+			  <option value="" disabled selected>Select an option</option>
+			  <option value="1">1(Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5(Strongly Agree)</option>
+			</select>
+		</div>
+		<h4>Question 4</h4>
+		<p>You rarely do something just out of sheer curiosity.</p>
+		<div class="input-field col s12">
+			<select id='question_4'>
+			  <option value="" disabled selected>Select an option</option>
+			  <option value="1">1(Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5(Strongly Agree)</option>
+			</select>
+		</div>
+		<h4>Question 5</h4>
+		<p>People can rarely upset you.</p>
+		<div class="input-field col s12">
+			<select id='question_5'>
+			  <option value="" disabled selected>Select an option</option>
+			  <option value="1">1(Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5(Strongly Agree)</option>
+			</select>
+		</div>
+		<h4>Question 6</h4>
+		<p>It is often difficult for you to relate to other people’s feelings.</p>
+		<div class="input-field col s12">
+			<select id='question_6'>
+			  <option value="" disabled selected>Select an option</option>
+			  <option value="1">1(Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5(Strongly Agree)</option>
+			</select>
+		</div>
+		<h4>Question 7</h4>
+		<p>In a discussion, truth should be more important than people’s sensitivities.</p>
+		<div class="input-field col s12">
+			<select id='question_7'>
+			  <option value="" disabled selected>Select an option</option>
+			  <option value="1">1(Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5(Strongly Agree)</option>
+			</select>
+		</div>
+		<h4>Question 8</h4>
+		<p>You rarely get carried away by fantasies and ideas.</p>
+		<div class="input-field col s12">
+			<select id='question_8'>
+			  <option value="" disabled selected>Select an option</option>
+			  <option value="1">1(Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5(Strongly Agree)</option>
+			</select>
+		</div>
+		<h4>Question 9</h4>
+		<p>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</p>
+		<div class="input-field col s12">
+			<select id='question_9'>
+			  <option value="" disabled selected>Select an option</option>
+			  <option value="1">1(Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5(Strongly Agree)</option>
+			</select>
+		</div>
+		<h4>Question 10</h4>
+		<p>You feel more energetic after spending time with a group of people.</p>
+		<div class="input-field col s12">
+			<select id='question_10'>
+			  <option value="" disabled selected>Select an option</option>
+			  <option value="1">1(Strongly Disagree)</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5(Strongly Agree)</option>
+			</select>
+		</div>
+		<a href='#' class="waves-effect waves-light btn submit">Submit</a>
+	</div>
+	<footer class='footer'>
+		<div class='container'>
+			<p><a href='api/friends'>API Friends Link</a> | <a href='https://github.com/Flakkus35/Friend_Finder'>Git Hub Repo</a></p>
+		</div>
+	</footer>
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+			$('select').material_select();
+			$('.modal').modal();
+		});
+
+		$('.submit').on('click', function(event) {
+			event.preventDefault();
+			if ($('#first_name2').val() == '' || $('#photo').val() == '') {
+				alert('Enter both a name and photo link');
+			} else {
+				var newFriend = {
+					name: $('#first_name2').val().trim(),
+					photo: $('#photo').val().trim(),
+					scores: [
+						$('#question_1').val(),
+						$('#question_2').val(),
+						$('#question_3').val(),
+						$('#question_4').val(),
+						$('#question_5').val(),
+						$('#question_6').val(),
+						$('#question_7').val(),
+						$('#question_8').val(),
+						$('#question_9').val(),
+						$('#question_10').val()
+					]
+				}
+				console.log(newFriend);
+				$.post('/api/friends', newFriend, function(data) {
+					var totalDifference = 100;
+/*					for (var i = 0; i < 10; i++) {
+						totalDifference += Math.abs(parseInt(newFriend.scores[i]) - parseInt(data[0].scores[i]));
+						console.log(totalDifference);
+					}*/
+					var chosenFriend = ''
+					data.forEach(function(element) {
+						var compareValue = 0;
+						for (var i = 0; i < element.scores.length; i++) {
+							compareValue += Math.abs(parseInt(newFriend.scores[i]) - parseInt(element.scores[i]));
+						}
+						console.log(compareValue);
+						if (compareValue < totalDifference && element.name != newFriend.name || element.photo != newFriend.photo) {
+							totalDifference = compareValue;
+							chosenFriend = element;
+						}
+					});
+					console.log(chosenFriend);
+					$('#modal1').modal('open');
+					$('#bestFriend').html(chosenFriend.name);
+					$('#bestFriendImage').attr('src', chosenFriend.photo);
+				});
+			}
+		});
+	</script>
+</body>
+</html>
